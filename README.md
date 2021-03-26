@@ -1,4 +1,4 @@
-# 🧩️ M.plugin.Arquetipo para API-CNIG
+# 🔌 M.plugin.Arquetipo para API-CNIG
 
 El propósito de este desarrollo es crear un plugin que sirva como prototipo para crear nuevos plugins para la **APICNIG 3.0**. Si bien mediante paquetes **npm** puede lanzarse un asistente para crear una estructura básica sobre la que podamos crear plugins, el ejemplo es muy escaso y tiene problemas de funcionamiento, además de que, al emnos para mí, carece de una explicación adecuada de los métodos y eventos necesarios para comprender la mecánica de funcionamiento.
 
@@ -18,15 +18,15 @@ y en esta ubicación ejecutamos, para el usar el Mapea Core.
 $ npm install -g mapea-create-plugin
 $ mapea-create-plugin
 # Lo hacemos con la versión 5.2
-# Dejamos que se instalen las dependencias npm. También podríamos no hacerlo y ejecutar luego un npm install
+# Dejamos que se instalen las dependencias npm. También podríamos instalarlas luego con un npm install
 $ npm start
 ```
 
 Para instalar el arquetipo que utiliza API-CNIG usamos
 
 ```bash
-$ npm install -g api-cnig-create-plugin     # Con esto instalamos nuestra herramienta de creación de plugin
-$ api-cnig-create-plugin                    # Así creamos un proyecto base para desarrollar nuestro plugin
+$ npm install -g api-cnig-create-plugin  # Con esto instalamos nuestra herramienta de creación de plugin
+$ api-cnig-create-plugin                 # Así creamos un proyecto base para desarrollar nuestro plugin
 ```
 
 Tras realizar el **npm install** y si se encuentran vulnerabilidades, podemos ver cuales son con **npm audit** y podemos corregirlas con **npm audit fix**.
@@ -36,13 +36,13 @@ Otras funciones disponibles son
 ```bash
 $ npm start           # Inicia entorno de desarrollo para depurar y probar
 $ npm run check       # Podemos validar el código con ESLint 
-$ npm run build       # Crea ficheros distribuibles de nuestro plugin para ser consumidos por nuestro visor
-$ npm run test-build  # Inicia entorno de producción para probar los ficheros creados con el comando anterior
+$ npm run build       # Crea ficheros distribuibles del plugin para ser consumidos por nuestro visor
+$ npm run test-build  # Entorno de producción para probar los ficheros creados con el comando anterior
 ```
 
 ## 📚 Recursos de consulta
 
-* 💡 Guía en detalle del plugin **Arquetipo** 👉 [documents/emolin.md](documents/emolin.md)
+* 💡 Guía en detalle del plugin **Arquetipo** 👉 [documents/e2molin.md](documents/emolin.md)
 * 💡 Snippets de código **Arquetipo** 👉 [documents/snippets.md](documents/snippets.md)
 * Manual de referencia API IGN [🔗 https://componentes.ign.es/api-core/doc/](https://componentes.ign.es/api-core/doc/)
 * Visor básico [🔗 https://componentes.ign.es/api-core/visor.jsp](https://componentes.ign.es/api-core/visor.jsp)
