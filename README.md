@@ -12,6 +12,7 @@ Voy a crear un proyecto arquetipo de plugin que sirva de base para crear los nue
 ```none
 C:\ms4w\Apache\htdocs\apicnig
 ```
+
 y en esta ubicación ejecutamos, para el usar el Mapea Core.
 
 ```bash
@@ -42,7 +43,7 @@ $ npm run test-build  # Entorno de producción para probar los ficheros creados 
 
 ## 📚 Recursos de consulta
 
-* 💡 Guía en detalle del plugin **Arquetipo** 👉 [documents/e2molin.md](documents/emolin.md)
+* 💡 Guía en detalle del plugin **Arquetipo** 👉 [documents/e2molin.md](documents/e2molin.md)
 * 💡 Snippets de código **Arquetipo** 👉 [documents/snippets.md](documents/snippets.md)
 * Manual de referencia API IGN [🔗 https://componentes.ign.es/api-core/doc/](https://componentes.ign.es/api-core/doc/)
 * Visor básico [🔗 https://componentes.ign.es/api-core/visor.jsp](https://componentes.ign.es/api-core/visor.jsp)

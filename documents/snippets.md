@@ -1,5 +1,26 @@
 # Snippets
 
+## Utilizando Handlebars para introducir condicionales
+
+Si queremos utilizar condicionales en la compilaciín de nuestra plantilla con handlebars, tenemos que implementar
+
+```javascript
+/*
+Función de registro del ifCond en HandleBars
+*/
+Handlebars.registerHelper('ifCond', function(v1, v2, options) {
+  if(v1 === v2) {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
+
+/* Aunque mejor en notación function arrows👇👇👇 */
+Handlebars.registerHelper('ifCond', (v1, v2, options) => {
+  return v1 === v2 ? options.fn(this) : options.inverse(this);
+});
+```
+
 ## Implementación del CreateView
 
 Previamente importamos el template y la función de traducción 
