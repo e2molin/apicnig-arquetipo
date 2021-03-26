@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?oguak4');
+  src:  url('fonts/icomoon.eot?oguak4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?oguak4') format('truetype'),
+    url('fonts/icomoon.woff?oguak4') format('woff'),
+    url('fonts/icomoon.svg?oguak4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chemistry-lab-instruments:before {
+  content: "\e900";
+}
+.icon-books:before {
+  content: "\e920";
+}
+.icon-map:before {
+  content: "\e94b";
+}
+.icon-database:before {
+  content: "\e964";
+}
+.icon-equalizer:before {
+  content: "\e992";
+}
+.icon-cog:before {
+  content: "\e994";
+}

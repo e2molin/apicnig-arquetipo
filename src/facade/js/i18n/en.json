@@ -1,0 +1,7 @@
+{
+  "tooltip": "Example Plugin Tooltip",
+  "title": "Example Plugin",
+  "button1": "Task 1",
+  "button2": "Activate",
+  "button3": "Deactivate"
+}

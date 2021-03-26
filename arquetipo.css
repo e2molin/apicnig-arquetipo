@@ -1,0 +1,51 @@
+/** Estilos sobreescritos */
+.g-cartografia-flecha-izquierda {
+  color: #00796B !important;
+}
+.g-cartografia-flecha-derecha {
+  color: #536DFE !important;
+}
+.m-control.activated>button {
+  color: rgb(255, 0, 0) !important;
+}
+
+/*Rolled button in panels on the right*/
+.m-areas>div.m-area.m-right>div.m-plugin-arquetipo.opened>button.m-panel-btn {
+  position: absolute;
+  left: -2.53rem;
+  background-color: #71a7d3;
+}
+
+/*Rolled button in panels on the left*/
+.m-areas>div.m-area.m-left>div.m-plugin-arquetipo.opened>button.m-panel-btn {
+  position: absolute;
+  right: -2.53rem;
+  left: unset !important;
+  background-color: #71a7d3;
+}
+
+.div-m-arquetipo-panel {
+  padding-top: 1px;
+  background-color: white;
+  width: 15rem; /*Esto marca la anchura máxima del panel del plugin*/
+}
+
+
+
+
+
+
+/** Estilos propios*/
+.info{
+  position : absolute;
+  width : 60%;
+  padding : 5px;
+  top : 10px;
+  left : 20%;
+  background : rgba(245, 245, 245, 0.8);
+  font-size : large;
+  border-radius : 5px;
+  border-style: dashed;
+  border-width: 2px;
+  text-align: center;
+}
