@@ -1,6 +1,6 @@
 # API CNIG
 
-## Referencias web
+## ⛲️ Referencias web
 
 * Seguimiento del proyecto CNIG-GUADALTEL  [🔗 enlace](https://www.guadaltel.es/redmine/)
 * Repositorio **Guadaltel** de API [🔗 enlace](https://www.guadaltel.es/redmine/projects/mapea-lite/repository/revisions/development/show).
@@ -9,9 +9,9 @@
 * Repositorio **CNIG** de Plugins [🔗 enlace](https://github.com/administradorcnig/APICore/tree/master/api-ign-js/src/plugins)
 * Galería de test de los Plugins [🔗 enlace](http://mapea-lite.desarrollo.guadaltel.es/api-core/test.html)
 
-## 🧺 Miscelania
+##  👨‍💻 Miscelania
 
-### Publicación de paquetes NPM
+### 🔸 Publicación de paquetes NPM
 
 Paso a comentar los requisitos y operaciones necesarios para tener la herramienta de creación de plugins disponible por **NPM**.
 
@@ -39,9 +39,45 @@ C:\Users\melena\AppData\Roaming\npm\node_modules
 Tras esto, tendremos a nivel de consola el comando api-cnig-plugins disponible, que nos creará un proyecto base de un plugin del API.
 
 
+## Trabajando a partir del repositorio principal
 
+### 🔸 Acceso al RedMine
 
-## Creando un arquetipo de plugin
+* https://www.guadaltel.es/redmine/login
+* User: **XXXXXXXXXXXX**
+* Pass: **XXXXXXXXXXXX**
+
+### 🔸 Clonar repositorio de visores
+
+Para clonar el repositorio de los Visores, me han tenido que dar acceso a su repositorio
+
+```bash
+# Con las mismas credenciales que el acceso a Redmine
+git clone https://www.guadaltel.es/git/cnigvisores
+```
+
+Con esto me clono todos los visualizadores. Seguidamente entro en la carpeta del iberpix y ejecuto un
+
+```bash
+npm install
+```
+
+### 🔸 Clonar repositorio de **APICORE**
+
+```bash
+# Con las mismas credenciales que el acceso a Redmine
+git clone https://www.guadaltel.es/git/mapea-lite
+```
+
+Aquí es donde puedo acceder a un plugin en desarrollo y modificarlo:
+
+* El **master** es la rama publicada en cliente
+* El **development** es la rama de desarrollos a partir de la cual desarrollamos
+* A partir de la rama **development** puedo crear una rama con la nomenclatura "redmine_<numero peticion redmine>" y en el caso del [QueryAttributes](https://www.guadaltel.es/redmine/issues/182790) sería **redmine_182790**.
+
+Es conveniente simper antes de crear la rama hacer un **pull** para traerse los últimos datos.
+
+## 🔌Creando un arquetipo de plugin
 
 Voy a crear un proyecto arquetipo de plugin que sirva de base para crear los nuevos plugins. Navegamos al directorio de trabajo, en mi caso
 
@@ -78,13 +114,13 @@ $ npm run test-build  # Inicia entorno de producción para probar los distribuib
 
 ## Conceptos
 
-### Tecnologías utilizadas en el desarrollo del plugin
+### 🔸 Tecnologías utilizadas en el desarrollo del plugin
 
 * Webpack [🔗 https://webpack.js.org](https://webpack.js.org)
 * Handlebars [🔗 https://handlebarsjs.com](https://handlebarsjs.com)
 * ESLint [🔗 https://eslint.org](https://eslint.org)
 
-### *Facade Interface* o interfaz de fachada
+### 🔸 *Facade Interface* o interfaz de fachada
 
 Usando el *facade interface* podemos independizar los desarrollos funcionales (fachada) de las librerías de mapas (implementación).
 * **Fachada**: común a todas las implementaciones. Operaciones independientes de la librería de mapas.
@@ -93,7 +129,7 @@ Usando el *facade interface* podemos independizar los desarrollos funcionales (f
 ![](img/facade-schema.jpg)
 
 
-### Clases importantes
+### 🔸 Clases importantes
 
 ![](img/classes-schema.jpg)
 
@@ -130,10 +166,7 @@ Usando el *facade interface* podemos independizar los desarrollos funcionales (f
   * getMap()
 
 
-
-
-
-## Creando iconos para los plugin con IcoMoon o Fontello.
+## 🎨 Creando iconos para los plugin con IcoMoon o Fontello.
 
 1. Buscamos el icono que queremos poner en formato SVG.
 2. Si necesitas cambiar la orientación de la imagen la rotas
@@ -245,5 +278,5 @@ mapImpl.addLayer(capa)
 
 ## Recursos
 
-http://sigdeletras.com/2019/apirest-de-datos-geograficos-con-node-y-express/
-https://ed.team/blog/como-publicar-en-npm
+* [API REST de datos geográficos con Node.js y Express](http://sigdeletras.com/2019/apirest-de-datos-geograficos-con-node-y-express/)
+* [¿Cómo publicar en npm?](https://ed.team/blog/como-publicar-en-npm)
